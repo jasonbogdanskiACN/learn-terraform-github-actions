@@ -90,7 +90,7 @@ jobs:
 
             </details>
 
-            *Pushed by: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*` Ref \`${{ github.ref }}\`*`;
+            *Ref: @${{ github.ref }}, Action: \`${{ github.event_name }}\`*`;
 
             github.rest.issues.createComment({
               issue_number: context.issue.number,
